@@ -22,3 +22,4 @@
                 <h2 class="title">Future Work</h2>
                 <p>To further develop this story, I aim to find data sets showing the number of data centers constructed and operated in each U.S. state over the last ten years, and their environmental impacts and energy demands. Since there is no national database providing this information, collecting this data is a challenge. I also hope to gain greater knowledge about the collection processes and significance of the U.S. Census data used for this project, and the potential reasons for the high rate of households in Virginia that do not have Internet access, when compared with other U.S. states.
                 </p>
+                <p>https://efkodon.github.io/va-internet/</p>
