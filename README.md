@@ -1,55 +1,24 @@
-  <head>
-     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Emily Keller-O'Donnell's Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
         <div class="section">
             <div class="container content">
                 <h1 class="title">Virginia, the data center capital of the world, has a higher percentage of households without Internet than most U.S. states</h1>
-            </p>
-                <div class="plot-holder">
-                
-                <p><strong>By Emily Keller-O'Donnell</strong></p>
-                <p> Survey results from the U.S. Census showed a higher percentage of households in Virginia lacked home Internet access in November 2021 than at any other point in which data was collected over the last ten years. About 34 percent of households in Virginia said they did not have home Internet access in the most recent survey, second only to Idaho (39 percent) and Nebraska (37 percent). 
-                </p>
-                <p> This comes as the number of data centers providing global Internet access have grown significantly across the region, making Northern Virginia the world leader in the prevalence of data center operations and construction, as measured by the number of data centers and their total power capacity.
-                </p>
-                <br>
-                <iframe title="Percentage of Households Without Home Internet (2021)" aria-label="Map" id="datawrapper-chart-MsdYz" src="https://datawrapper.dwcdn.net/MsdYz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="540" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                </script>
-                 <br> 
-                <br>
-                <br>
-                <p>
-                The <a href="https://ntia.gov/other-publication/2022/digital-nation-data-explorer#sel=internetUser&disp=map">Internet Use Survey</a> is conducted every 1-2 years by the National Telecommunications and Information Administration, a division of the United States Department of Commerce. On average, 23 percent of U.S. households said they did not have home Internet in the 2021 survey.
+                <h2 class="title">Overview</h2>
+                <p> I created this project as a student in The Lede Program at Columbia University's Graduate School of Journalism. My goal was to explore Internet habits in the U.S. as a lens for understanding data center growth trends.
                 </p>
                 <p>
-                <p> The most common reasons stated by Virginia households for not having Internet at home was lack of need or interest (58 percent), and high expense (14 percent). These percentages were comparable to national averages of 56 percent and 18 percent, respectively.
-                <br>
-                <br>
-                <br>
-                <iframe title="Percentage of Households Without  Home Internet in Virginia" aria-label="Interactive line chart" id="datawrapper-chart-6RwrZ" src="https://datawrapper.dwcdn.net/6RwrZ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                </script>
-                <br>
-                <br>
-                <p>The prominence of Virginia as the top global data center hotspot is quantified by both the number of total facilities, and their total power capacity in megawatts (MW). According to a <a href="https://dgtlinfra.com/united-states-data-centers/">list</a> of the largest ten data center regions in the U.S. by <i>Dgtl Infra</i>, there are 275 data centers in Northern Virginia, with a total of 2,600 megawatts of multi-tenant commissioned power. This is followed by Northern California (Silicon Valley) with 160 data centers and 625 MW, and Dallas, Texas, with 150 data centers providing 650 MW. 
+                  I explored data from the National Telecommunications and Information Administration's <a href="https://ntia.gov/other-publication/2022/digital-nation-data-explorer#sel=internetUser&disp=map">Internet Use Survey</a> in csv format. I was immediately struck by the high percentage of homes without Internet in the state of Virginia, compared to other U.S. states and past years, given that Virginia is known to have the largest number of data centers of any U.S. state. Overall, 34 % of households in Virginia had no Internet in 2021, compared with a national average of 23 percent. My goal was to show the contrast between the percentage of households without home Internet in Virginia, and the state's vast quantity of data centers that support global Internet activity.
                 </p>
-                <p>The real estate company <i>JLL</i> provides a higher estimate of total MW for all of the data centers in Northern Virginia combined. According to the <a href="https://www.us.jll.com/en/trends-and-insights/research/data-center-outlook">2023 Data Centers Global Outlook report</a> report, Northern Virginia has the largest regional market share in the global data center industry, providing a total of 3,442 megawatts of commissioned power, which is more than the power capacity of the next three markets combined. The region also leads the world in ongoing data center construction, as measured by total power capacity of facilities that are currently being built.
+                <p>
+                  I used pandas to further explore the data; convert string arguments to datetime; rename the columns; and create a smaller dataframe focusing on the percentages of households per state that lacked Internet access at home from 2011-2021. I used Datawrapper to plot the data into a choropleth map and a line chart. 
                 </p>
-                <br>
-                <iframe title="Primary and Secondary Data Center Markets" aria-label="Stacked Bars" id="datawrapper-chart-iARYB" src="https://datawrapper.dwcdn.net/iARYB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="625" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                </script>
-                <br>
-                <br>
-                <p>The continued growth of data centers across the state of Virginia has been met with waves of local resistance in the areas such as <a href="https://www.insidenova.com/headlines/after-historic-14-hour-meeting-supervisors-approve-pw-digital-gateway-plan/article_f88f6518-5ab5-11ed-be16-c7ae6694aa4c.html">Prince William County</a>, <a href="https://www.datacenterknowledge.com/manage/fairfax-county-residents-push-back-data-center-zoning">Fairfax County</a>, <a href="https://www.bayjournal.com/news/growth_conservation/data-centers-may-be-nearing-tipping-point-in-northern-virginia/article_16c6281e-fff2-11ed-987c-07e765e5f710.html">and Loudoun County</a>, despite welcomed fiscal, <a href="https://www.datacenterfrontier.com/cloud/article/11427507/data-centers-bring-12-billion-a-year-in-taxes-into-virginia8217s-economy">tax</a> and <a href="https://biz.loudoun.gov/wp-content/uploads/2021/03/Data_Center_Report_2020-1.pdf">employment benefits</a>. Residents and community advocates have expressed concerns about light and <a href="https://www.washingtonpost.com/dc-md-va/2023/02/10/data-centers-northern-virginia-internet/">noise pollution</a>, water and energy use, and even an <a href="https://www.washingtonpost.com/dc-md-va/2022/08/08/salt-sodium-water-levels-dc/">increase in regional saltwater</a>. The rise in the percentage of households without home Internet from 2011-2021 to a total of one-third of households in Virginia, as revealed by the U.S. Census survey, adds new context to these ongoing debates.
+                <p> I used an additional small data set from the <a href="https://www.us.jll.com/en/trends-and-insights/research/data-center-outlook">2023 Data Centers Global Outlook report</a> report by real estate company <i>JLL</i> to create a stacked bar graph. I also conducted qualitative research through publications to provide additional context to the story.
                 </p>
-                <div class="plot-holder">
-    </div>
-  </section>
-  </body>
-</html>
-
-
+                <h2 class="title">Skills Learned</h2>
+                <p>To create this project, I developed skills in data exploration and cleaning through pandas, creating maps and graphs in Datawrapper, creating an index.html file using Visual Style Code and HTML, and pulling everything together for publication via Github. I also developed first-hand experience working to understand the context of a government data set with hundreds of rows and columns in order to frame findings in an accurate light. 
+                </p>
+                <h2 class="title">Future Work</h2>
+                <p>To further develop this story, I aim to find data sets showing the number of data centers constructed and operated in each U.S. state over the last ten years, and their environmental impacts and energy demands. Since there is no national database providing this information, collecting this data is a challenge. I also hope to gain greater knowledge about the collection processes and significance of the U.S. Census data used for this project, and the potential reasons for the high rate of households in Virginia that do not have Internet access, when compared with other U.S. states.
+                </p>
